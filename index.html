@@ -1,11 +1,10 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Bryce Davis</title>
+  <title>Bryce Davis - Software Engineer</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -13,14 +12,16 @@
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo">Portfolio</div>
+      <div class="logo">Bryce<span>.</span></div>
       <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <ul class="nav-links">
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-        <li><a href="Assets/Bryce Davis Resume.pdf" target="_blank"><button>Resume</button></a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
         <span></span>
       </label>
     </nav>
@@ -29,106 +30,259 @@
   <main>
     <section class="intro">
       <div class="intro-text">
-        <p>Hi, my name is</p>
-        <h1>Bryce Davis</h1>
+        <p>Hi, welcome!</p>
+        <h1>I'm Bryce Davis</h1>
         <p class="description">
-          I'm a student at the State University of New York at Oneonta studying Computer Science with an interest in
-          Software Engineering. I'm currently focused on Web and App development.
+          I'm a Computer Science senior at SUNY Oneonta focused on full-stack development and web applications. I combine technical expertise in web development with real-world problem-solving experience across data science, IT infrastructure, and application development.
         </p>
+        <div class="cta-buttons">
+          <a href="#projects" class="cta-btn cta-btn-primary">View My Work</a>
+          <a href="https://www.linkedin.com/in/bryce-davis-4b90b0246/" target="_blank" class="cta-btn cta-btn-secondary">Connect on LinkedIn</a>
+        </div>
       </div>
       <div class="intro-img">
-        <img src="Assets/headshot.jpg" alt="Bryce Davis" />
+        <img src="Assets/headshot.jpg" alt="Bryce Davis" onerror="this.style.display='none'"/>
       </div>
     </section>
 
     <section id="projects">
-      <h2 class="section-title">Projects</h2>
+      <h2 class="section-title">Featured Projects</h2>
       <div class="projects-grid">
         <div class="card">
+          <a href="https://codebryce.github.io/roambudget-web/" target="_blank" class="card-link">
+            <i class="fa fa-globe fa-2x"></i>
+            <h3>RoamBudget</h3>
+            <p>A smart travel budgeting application that helps travelers plan, track, and optimize their expenses across different destinations and currencies.</p>
+            <ul>
+              <li>React</li>
+              <li>JavaScript</li>
+              <li>CSS3</li>
+              <li>Responsive Design</li>
+            </ul>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="https://coldcraft-one.vercel.app/" target="_blank" class="card-link">
+            <i class="fa fa-snow-o fa-2x"></i>
+            <h3>Coldcraft</h3>
+            <p>An interactive weather application providing real-time forecasts, climate insights, and weather-based recommendations with a sleek, modern interface.</p>
+            <ul>
+              <li>React</li>
+              <li>Weather API</li>
+              <li>Tailwind CSS</li>
+              <li>Next.js</li>
+            </ul>
+          </a>
+        </div>
+
+        <div class="card">
           <a href="https://brycemovieapp.netlify.app" target="_blank" class="card-link">
-            <i class='fa fa-folder-o fa-2x'></i>
+            <i class="fa fa-film fa-2x"></i>
             <h3>Movie App</h3>
-            <p>A Movie app that provides searched movie's plot summary, release date, and cover.</p>
+            <p>A movie discovery app that provides plot summaries, release dates, ratings, and cover images using real-time API data.</p>
             <ul>
               <li>HTML & CSS</li>
-              <li>JS</li>
+              <li>JavaScript</li>
               <li>TMDb API</li>
             </ul>
           </a>
         </div>
-        <div class="card">
-          <a href="https://replit.com/@BryceDavis5/TicTacToe?v=1" target="_blank" class="card-link">
-            <i class='fa fa-folder-o fa-2x'></i>
-            <h3>Tic-tac-toe</h3>
-            <p>Play the classic Tic-Tac-Toe game with two players.</p>
-            <ul>
-              <li>Python</li>
-              <li>Tkinter</li>
-            </ul>
-          </a>
-        </div>
+
         <div class="card">
           <a href="https://languagequiz.netlify.app" target="_blank" class="card-link">
-            <i class='fa fa-folder-o fa-2x'></i>
+            <i class="fa fa-flag fa-2x"></i>
             <h3>Language Quiz</h3>
-            <p>Guess the top 9 languages in the United States!</p>
+            <p>An engaging quiz game where users guess the top languages spoken in the United States with instant feedback and scoring.</p>
             <ul>
               <li>HTML & CSS</li>
-              <li>JS</li>
-              <li>Bulma</li>
+              <li>JavaScript</li>
+              <li>Bulma CSS</li>
             </ul>
           </a>
         </div>
+
         <div class="card">
           <a href="https://whatisyourpersonality.netlify.app" target="_blank" class="card-link">
-            <i class='fa fa-folder-o fa-2x'></i>
+            <i class="fa fa-heart fa-2x"></i>
             <h3>Personality Test</h3>
-            <p>What type of Personality do you have?</p>
+            <p>A personality assessment tool that determines your personality type through interactive questions and provides detailed results.</p>
             <ul>
               <li>HTML & CSS</li>
-              <li>JS</li>
-              <li>Bulma</li>
+              <li>JavaScript</li>
+              <li>Bulma CSS</li>
             </ul>
           </a>
         </div>
+
         <div class="card">
           <a href="https://gifcurator.netlify.app" target="_blank" class="card-link">
-            <i class='fa fa-folder-o fa-2x'></i>
-            <h3>Gif Generator</h3>
-            <p>Gifs like grandma used to make :)</p>
+            <i class="fa fa-image fa-2x"></i>
+            <h3>GIF Generator</h3>
+            <p>A fun GIF discovery and generation tool that searches and displays animated GIFs based on user queries.</p>
             <ul>
               <li>HTML & CSS</li>
-              <li>JS</li>
-              <li>Bulma</li>
+              <li>JavaScript</li>
               <li>Giphy API</li>
-            </ul>
-          </a>
-        </div>
-        <div class="card">
-          <a href="https://genericweb.netlify.app" target="_blank" class="card-link">
-            <i class='fa fa-folder-o fa-2x'></i>
-            <h3>Generic Webpage</h3>
-            <p>Scholarship website landing page for Agricultural Professor.</p>
-            <ul>
-              <li>HTML & CSS</li>
-              <li>JS</li>
+              <li>Bulma CSS</li>
             </ul>
           </a>
         </div>
       </div>
     </section>
 
-    <section id="contacts" class="contact">
-      <h2>Get In Touch</h2>
-      <p>Seeking internship like a caffeine-craving code guru! Let's turn bugs into features – I'll supply the code, you
-        supply the challenge. Ready to dive into the debugging dance together?</p>
-      <a href="https://www.linkedin.com/in/bryce-davis-4b90b0246/" target="_blank" class="contact-btn">Say Hi</a>
+    <section id="resume" class="resume-section">
+      <h2 class="section-title">Resume</h2>
+      
+      <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab('summary')">Summary</button>
+        <button class="tab-btn" onclick="switchTab('experience')">Experience</button>
+        <button class="tab-btn" onclick="switchTab('education')">Education</button>
+        <button class="tab-btn" onclick="switchTab('skills')">Skills & Certifications</button>
+      </div>
+
+      <div class="resume-container">
+        <div id="summary" class="tab-content active">
+          <div class="resume-header">
+            <div class="resume-name">Bryce Davis</div>
+            <p class="resume-summary">
+              Motivated Computer Science senior with diverse experience in data science, application development, and IT operations. Recently engineered a fullstack R Shiny simulation tool for ecological research at SUNY Oneonta. Complements development expertise with a robust background in technical support and network troubleshooting. Adept at resolving complex hardware/software issues and leveraging technical skills to solve data-driven problems.
+            </p>
+            <a href="Assets/Bryce Davis Resume.pdf" target="_blank" class="resume-download">📄 Download Full Resume</a>
+          </div>
+        </div>
+
+        <div id="experience" class="tab-content">
+          <div class="resume-entry">
+            <div class="resume-entry-title">Desktop Support Technician</div>
+            <div class="resume-entry-subtitle">State University of New York at Oneonta | November 2022 - Present</div>
+            <ul>
+              <li>Responded to user inquiries and resolved technical issues related to hardware, software, and network connectivity for university staff and students</li>
+              <li>Provided comprehensive technical support for over 6,000 university staff and students across Windows 10/11 and macOS environments</li>
+              <li>Managed network connectivity troubleshooting, including Cisco VPN access</li>
+              <li>Imaged Windows 10/11 & macOS laptops and desktops while handling windows driver malfunctions</li>
+              <li>Installed, configured, and maintained campus AV equipment, including cameras and microphones</li>
+              <li>Documented all support tickets and maintained accurate records in TeamDynamix and ServiceNow</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-title">Data Science Intern</div>
+            <div class="resume-entry-subtitle">SUNY Oneonta (Biological Sciences Dept.) | August 2025 - Present</div>
+            <ul>
+              <li>Developed a full-stack R Shiny web application to simulate and visualize complex anadromous fish population dynamics</li>
+              <li>Engineered a reactive user interface using the bslib library, allowing biologists to dynamically test dam passage scenarios</li>
+              <li>Implemented a "Custom Habitat" feature that parses user-uploaded CSV datasets for hypothesis testing</li>
+              <li>Designed a statistical summary dashboard that automatically calculates key metrics for decision-making</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-title">Election Technology Support (Independent Contractor)</div>
+            <div class="resume-entry-subtitle">KnowInk | July 2025 - August 2025</div>
+            <ul>
+              <li>Deployed and maintained KnowInk Poll Pads across assigned voting sites</li>
+              <li>Provided real-time technical support to poll workers during early voting and Election Day operations</li>
+              <li>Diagnosed and resolved on-site hardware/software issues including Wi-Fi, device syncing, and printer pairing</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-title">IT Infrastructure & Digital Systems Intern</div>
+            <div class="resume-entry-subtitle">Boston Road Building Materials | April 2025 - August 2025</div>
+            <ul>
+              <li>Redesigned and implemented a comprehensive network infrastructure improving connectivity and security</li>
+              <li>Supported a full website overhaul, enhancing user experience and visual layout</li>
+              <li>Optimized SMS and email marketing campaigns, increasing customer engagement</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="education" class="tab-content">
+          <div class="resume-entry">
+            <div class="resume-entry-title">Bachelor of Science in Computer Science</div>
+            <div class="resume-entry-subtitle">SUNY Oneonta | May 2026 | GPA: 3.02</div>
+            <div class="resume-entry-text">
+              Minor in Mathematics
+            </div>
+          </div>
+        </div>
+
+        <div id="skills" class="tab-content">
+          <div class="resume-entry">
+            <div class="resume-entry-title">Programming Languages & Frameworks</div>
+            <ul>
+              <li>JavaScript (ES6+), React, HTML5, CSS3, Python, R, SQL</li>
+              <li>Next.js, Tailwind CSS, Node.js, Express.js</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-title">Tools & Technologies</div>
+            <ul>
+              <li>Git/GitHub, RESTful APIs, Responsive Web Design</li>
+              <li>Windows/macOS/Linux, Azure, Active Directory</li>
+              <li>API Integration (TMDb, Giphy, Weather APIs)</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-title">Certifications</div>
+            <ul>
+              <li>CompTIA A+ Certification</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-title">Soft Skills</div>
+            <ul>
+              <li>Problem-solving, Technical Communication, Team Collaboration</li>
+              <li>Customer Support, Project Management, Quick Learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Let's Connect</h2>
+      <p>I'm always interested in discussing new opportunities, collaborations, or just talking tech! Feel free to reach out on LinkedIn or explore my GitHub to see more of my work.</p>
+      <a href="https://www.linkedin.com/in/bryce-davis-4b90b0246/" target="_blank" class="contact-btn">Get In Touch</a>
     </section>
   </main>
 
   <footer>
-    Built by Bryce Davis ;)
+    <p>Crafted with ❤️ by Bryce Davis | © 2026</p>
   </footer>
+
+  <script>
+    function switchTab(tabName) {
+      // Hide all tab contents
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach(content => content.classList.remove('active'));
+
+      // Remove active class from all buttons
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      // Show selected tab and highlight button
+      document.getElementById(tabName).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+          // Close mobile menu if open
+          document.getElementById('nav-toggle').checked = false;
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
